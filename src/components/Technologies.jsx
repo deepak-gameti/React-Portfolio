@@ -4,6 +4,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandJavascript } from "react-icons/tb";
 import { TbBrandHtml5 } from "react-icons/tb";
 import { TbBrandCss3 } from "react-icons/tb";
+import { TbBrandFramerMotion } from "react-icons/tb";
 import { animate, motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -89,6 +90,16 @@ const Technologies = () => {
         >
           <RiTailwindCssFill className="text-7xl text-cyan-400" />
         </motion.div>
+
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <TbBrandFramerMotion className="text-7xl bg-gradient-to-bl from-pink-600 to-blue-700"/>
+        </motion.div>
+
       </motion.div>
     </div>
   );
